@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Missingnumer20</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div class="navigation">
+		<p class="burger">
+			<i class="fa fa-2x fa-bars" aria-hidden="true"></i>
+		</p>			
+	</div>
+	<div class="col-xs-4 col-md-2 menu">
+	</div>
+	<%= yield %>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+
+$cyana: #00E5FF;
+$cyanb: #0091EA;
+
+body {
+	background-image: url(/assets/fonfon-001.gif);
+	height:100%;
+    width: 100%;
+}
+
+html {
+    height:100%;
+    width: 100%;
+}
+
+.navigation {
+	width: 100%;
+	height: 50px;
+    background: -webkit-linear-gradient($cyana, $cyanb); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($cyana, $cyanb); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($cyana, $cyanb); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($cyana, $cyanb); /* Standard syntax */
+	opacity: 50%;
+	-webkit-box-shadow: -1px 6px 50px 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 6px 50px 2px rgba(0,0,0,0.75);
+	box-shadow: -1px 6px 50px 2px rgba(0,0,0,0.75);
+	z-index: 99;
+}
+
+.burger {
+	color: white;
+	padding: 10px;
+}
+
+.menu {
+	height: 100%;
+	margin-bottom: 0px;
+	background-color: white;
+	z-index: 50;
+}
